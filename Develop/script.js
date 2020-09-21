@@ -26,17 +26,16 @@ function generatePassword() {
   
   var newPassword = "";
   var PWlg = parseInt(prompt("How long is your password (8 - 128)?"));
+  if (PWlg < 8 || PWlg > 128) {
+    alert("Must enter a number between 8 - 128!");
+     return '';     
+    } 
+
   var wantsUppercase = confirm("Would you like uppercase letters in your password?");
   var wantsLowercase = confirm("Would you like lowercas letters in your password");
   var wantsNumbers = confirm("Would you like numbers in your password?");
   var wantsSymbols = confirm("Would you like symbols in your password?");
- 
-    if (PWlg < 8 || PWlg > 128) {
-    alert("Must enter a number between 8 - 128!");
-     return '';
-     
-    }  
-    
+        
     if (wantsUppercase == false && wantsLowercase == false && wantsNumbers == false && wantsSymbols == false) {
       alert("Must select a cobination of case, symbols, and/or numbers!");  
       return '';       
@@ -53,8 +52,7 @@ function generatePassword() {
   }
      if (wantsSymbols) {
        PWselector += symbols
-  }
-  
+  }  
      
         for (i = 0; i < PWlg; i++) {
           var char = Math.floor(Math.random() * PWselector.length);
