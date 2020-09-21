@@ -12,12 +12,57 @@
 // * Gather user input with prompt's and confirm's
 
 // all your code goes here.
-// function generatePassword() {
-//   var newpassword;
+  
 
 
-//   return newpassword;
-// }
+function generatePassword() {
+
+  var PWselector = "";
+  var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowercase = "abcdefghijklmnopqrstuvwxyz";
+  var numbers = "0123456789";
+  var symbols = "@#$!%&*^<>?";
+  
+  
+  var newPassword = "";
+  var PWlg = parseInt(prompt("How long is your password (8 - 128)?"));
+  var wantsUppercase = confirm("Would you like uppercase letters in your password?");
+  var wantsLowercase = confirm("Would you like lowercas letters in your password");
+  var wantsNumbers = confirm("Would you like numbers in your password?");
+  var wantsSymbols = confirm("Would you like symbols in your password?");
+ 
+    if (PWlg < 8 || PWlg > 128) {
+    alert("Must enter a number between 8 - 128!");
+     return '';
+     
+    }  
+    
+    if (wantsUppercase == false && wantsLowercase == false && wantsNumbers == false && wantsSymbols == false) {
+      alert("Must select a cobination of case, symbols, and/or numbers!");  
+      return '';       
+    }    
+
+      if (wantsUppercase) {
+        PWselector += uppercase
+  }
+     if (wantsLowercase) {
+        PWselector += lowercase
+  }
+     if (wantsNumbers) {
+       PWselector += numbers
+  }
+     if (wantsSymbols) {
+       PWselector += symbols
+  }
+  
+     
+        for (i = 0; i < PWlg; i++) {
+          var char = Math.floor(Math.random() * PWselector.length);
+          newPassword += PWselector[char]
+        }
+            
+      return newPassword;
+    }
 
 ///////////////////////////////////////////////////////////////////////
 // DO NOT TOUCH THIS CODE
