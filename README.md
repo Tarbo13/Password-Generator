@@ -12,22 +12,22 @@ For this project I completed an application that generates a random password bas
 
 ### Screen Shots
 
-![Initial page](https://user-images.githubusercontent.com/68627417/93841477-8f491e00-fc48-11ea-9baf-36a826a8f155.png)
+![Initial page](https://user-images.githubusercontent.com/68627417/93968793-42844680-fd1f-11ea-9abc-ed5f4102c1a0.png)
 
 <br>
 
-![PW length](https://user-images.githubusercontent.com/68627417/93841525-b869ae80-fc48-11ea-8972-e17ef79f153b.png)
+![PW length?](https://user-images.githubusercontent.com/68627417/93968853-62b40580-fd1f-11ea-91dd-4e292f30a689.png)
 
 <br>
 
-![Selection criteria](https://user-images.githubusercontent.com/68627417/93841583-e18a3f00-fc48-11ea-993c-f32a686a0ae0.png)
+![Selection criteria](https://user-images.githubusercontent.com/68627417/93968896-824b2e00-fd1f-11ea-9ea5-8773b2f83c15.png)
 
 <br>
 
-![Error message](https://user-images.githubusercontent.com/68627417/93841626-0979a280-fc49-11ea-829c-cc69448237bf.png)
+![Error message](https://user-images.githubusercontent.com/68627417/93968999-b6beea00-fd1f-11ea-9b27-abd517420d68.png)
 
 <br>
 
-![Generated PW](https://user-images.githubusercontent.com/68627417/93841668-2dd57f00-fc49-11ea-9de8-105cfd0c65f4.png)
+![Generated password](https://user-images.githubusercontent.com/68627417/93969045-d0f8c800-fd1f-11ea-9bdd-167f957eba09.png)
 
 
